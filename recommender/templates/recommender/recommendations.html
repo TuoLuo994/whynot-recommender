@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'recommender/style.css' %}">
+<meta charset="UTF-8">
+<body>
+    <div class=container>
+        <h1>Recommendations for user {{ user}} </h1>
+        <ul class=filmlist>
+        {% for movie in Movie_Names %}
+            
+            <li class="film">
+                <img src="https://www.sis.uta.fi/~tl99547/img/Movieposter.png"></img>
+                <p class=moviename> {{ movie}} </p>
+            </li>
+        {% endfor %}
+        </ul>
+        <form method="post" class="whynot">
+            {% csrf_token %}
+            {{ form }}
+            <br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+        <p class=explanation>{{whynot}}</p>
+    </div>
+</body>

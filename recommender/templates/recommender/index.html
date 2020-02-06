@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'recommender/style.css' %}">
+<body>
+    <div class=container>
+        <h1> Choose User </h1>
+        <ul class=userlist>
+        {% for user in five_users %}
+            <li class=user><a href="/recommender/{{ user }}/">{{ user }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>

@@ -1,0 +1,90 @@
+h1{
+    font-size: 2.6em;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    color: saddlebrown;
+    text-align: center;
+}
+
+ul{
+    padding-left:0; 
+    list-style-type: none;
+}
+ul.userlist {
+    text-align: center;
+}
+ul.filmlist{
+    text-align: left;
+}
+li {
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: peru;
+}
+
+li.film{
+    margin: 10px;
+    vertical-align: center;
+    height:90px;
+    padding:2px;
+}
+
+p.moviename{
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+
+li.user{
+    display: inline-block;
+    min-width: 43px;
+    padding:15px;
+    margin: 3px;
+    font-size: 1.6em;
+
+}
+ul li {
+    list-style-position:inside
+}
+
+.container{
+    border-radius: 25px;
+    margin: 30px 20vw 50px 20vw;
+    background-color: wheat;
+    padding: 15px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+html{
+    background: url("cinema.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+img{
+    float:left;
+    margin:3px;
+    border-radius: 15px;
+}
+
+.whynot{
+    text-align:center;
+    size: 6em;
+}
+input {
+    width: 90%;
+    border-radius: 5px;
+    font-size:1.6em;
+    padding:3px;
+  }
+.submit{
+    width:auto;
+    margin:7px;
+    background-color: rgb(239,106,40)
+}
+
+.explanation{
+    font-size:2em;
+    text-align:center;
+}
